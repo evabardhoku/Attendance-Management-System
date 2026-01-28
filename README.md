@@ -61,7 +61,7 @@ and update it to match your SQL Server instance and database name.
 Example (adjust to your environment):
 ```txt
 Server=.\SQLEXPRESS;Database=FinalProject;Trusted_Connection=True;
-
+```
 
 
 <img width="1378" height="684" alt="image" src="https://github.com/user-attachments/assets/ae447798-4e75-45ee-9e9a-754913226a7f" />
