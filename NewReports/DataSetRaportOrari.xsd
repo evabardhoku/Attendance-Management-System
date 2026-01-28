@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinalProjectDataSet2" targetNamespace="http://tempuri.org/FinalProjectDataSet2.xsd" xmlns:mstns="http://tempuri.org/FinalProjectDataSet2.xsd" xmlns="http://tempuri.org/FinalProjectDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FinalProjectConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FinalProjectConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FinalProject_Eva_Bardhoku.Properties.Settings.GlobalReference.Default.FinalProjectConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrariTableAdapter" GeneratorDataComponentClassName="OrariTableAdapter" Name="Orari" UserDataComponentName="OrariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FinalProjectConnectionString (Settings)" DbObjectName="FinalProject.dbo.Orari" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT RoomName, SubjectName, Weekday, StartTime, EndTime FROM dbo.Orari</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RoomName" DataSetColumn="RoomName" />
+              <Mapping SourceColumn="SubjectName" DataSetColumn="SubjectName" />
+              <Mapping SourceColumn="Weekday" DataSetColumn="Weekday" />
+              <Mapping SourceColumn="StartTime" DataSetColumn="StartTime" />
+              <Mapping SourceColumn="EndTime" DataSetColumn="EndTime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinalProjectDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="FinalProjectDataSet2" msprop:Generator_DataSetName="FinalProjectDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Orari" msprop:Generator_RowEvHandlerName="OrariRowChangeEventHandler" msprop:Generator_RowDeletedName="OrariRowDeleted" msprop:Generator_RowDeletingName="OrariRowDeleting" msprop:Generator_RowEvArgName="OrariRowChangeEvent" msprop:Generator_TablePropName="Orari" msprop:Generator_RowChangedName="OrariRowChanged" msprop:Generator_RowChangingName="OrariRowChanging" msprop:Generator_TableClassName="OrariDataTable" msprop:Generator_RowClassName="OrariRow" msprop:Generator_TableVarName="tableOrari" msprop:Generator_UserTableName="Orari">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoomName" msprop:Generator_ColumnPropNameInRow="RoomName" msprop:Generator_ColumnPropNameInTable="RoomNameColumn" msprop:Generator_ColumnVarNameInTable="columnRoomName" msprop:Generator_UserColumnName="RoomName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubjectName" msprop:Generator_ColumnPropNameInRow="SubjectName" msprop:Generator_ColumnPropNameInTable="SubjectNameColumn" msprop:Generator_ColumnVarNameInTable="columnSubjectName" msprop:Generator_UserColumnName="SubjectName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Weekday" msprop:Generator_ColumnPropNameInRow="Weekday" msprop:Generator_ColumnPropNameInTable="WeekdayColumn" msprop:Generator_ColumnVarNameInTable="columnWeekday" msprop:Generator_UserColumnName="Weekday" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_UserColumnName="StartTime" type="xs:duration" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_UserColumnName="EndTime" type="xs:duration" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

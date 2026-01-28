@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinalProjectDataSet4" targetNamespace="http://tempuri.org/FinalProjectDataSet4.xsd" xmlns:mstns="http://tempuri.org/FinalProjectDataSet4.xsd" xmlns="http://tempuri.org/FinalProjectDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FinalProjectConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FinalProjectConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FinalProject_Eva_Bardhoku.Properties.Settings.GlobalReference.Default.FinalProjectConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StudentGroupCardViewTableAdapter" GeneratorDataComponentClassName="StudentGroupCardViewTableAdapter" Name="StudentGroupCardView" UserDataComponentName="StudentGroupCardViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FinalProjectConnectionString (Settings)" DbObjectName="FinalProject.dbo.StudentGroupCardView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FirstName, LastName, Email, CardNumber, GroupName FROM dbo.StudentGroupCardView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="CardNumber" DataSetColumn="CardNumber" />
+              <Mapping SourceColumn="GroupName" DataSetColumn="GroupName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinalProjectDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="FinalProjectDataSet4" msprop:Generator_DataSetName="FinalProjectDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StudentGroupCardView" msprop:Generator_RowEvHandlerName="StudentGroupCardViewRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentGroupCardViewRowDeleted" msprop:Generator_RowDeletingName="StudentGroupCardViewRowDeleting" msprop:Generator_RowEvArgName="StudentGroupCardViewRowChangeEvent" msprop:Generator_TablePropName="StudentGroupCardView" msprop:Generator_RowChangedName="StudentGroupCardViewRowChanged" msprop:Generator_RowChangingName="StudentGroupCardViewRowChanging" msprop:Generator_TableClassName="StudentGroupCardViewDataTable" msprop:Generator_RowClassName="StudentGroupCardViewRow" msprop:Generator_TableVarName="tableStudentGroupCardView" msprop:Generator_UserTableName="StudentGroupCardView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_UserColumnName="FirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_UserColumnName="LastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_UserColumnName="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CardNumber" msprop:Generator_ColumnPropNameInRow="CardNumber" msprop:Generator_ColumnPropNameInTable="CardNumberColumn" msprop:Generator_ColumnVarNameInTable="columnCardNumber" msprop:Generator_UserColumnName="CardNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_UserColumnName="GroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,19 @@
+## Visual Studio / .NET
+.vs/
+bin/
+obj/
+Debug/
+Release/
+*.user
+*.suo
+*.cache
+*.pdb
+*.log
+
+## NuGet
+packages/
+*.nupkg
+
+## OS
+Thumbs.db
+.DS_Store

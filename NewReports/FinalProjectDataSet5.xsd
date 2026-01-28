@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinalProjectDataSet5" targetNamespace="http://tempuri.org/FinalProjectDataSet5.xsd" xmlns:mstns="http://tempuri.org/FinalProjectDataSet5.xsd" xmlns="http://tempuri.org/FinalProjectDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FinalProjectConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FinalProjectConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FinalProject_Eva_Bardhoku.Properties.Settings.GlobalReference.Default.FinalProjectConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DailyStudentAttendanceReportTableAdapter" GeneratorDataComponentClassName="DailyStudentAttendanceReportTableAdapter" Name="DailyStudentAttendanceReport" UserDataComponentName="DailyStudentAttendanceReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FinalProjectConnectionString (Settings)" DbObjectName="FinalProject.dbo.DailyStudentAttendanceReport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT UserID, FirstName, LastName, Email, GroupName, AttendanceDate, Status, SubjectID, InstructorFirstName, InstructorLastName FROM dbo.DailyStudentAttendanceReport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserID" DataSetColumn="UserID" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="GroupName" DataSetColumn="GroupName" />
+              <Mapping SourceColumn="AttendanceDate" DataSetColumn="AttendanceDate" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="SubjectID" DataSetColumn="SubjectID" />
+              <Mapping SourceColumn="InstructorFirstName" DataSetColumn="InstructorFirstName" />
+              <Mapping SourceColumn="InstructorLastName" DataSetColumn="InstructorLastName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinalProjectDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="FinalProjectDataSet5" msprop:Generator_DataSetName="FinalProjectDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DailyStudentAttendanceReport" msprop:Generator_RowEvHandlerName="DailyStudentAttendanceReportRowChangeEventHandler" msprop:Generator_RowDeletedName="DailyStudentAttendanceReportRowDeleted" msprop:Generator_RowDeletingName="DailyStudentAttendanceReportRowDeleting" msprop:Generator_RowEvArgName="DailyStudentAttendanceReportRowChangeEvent" msprop:Generator_TablePropName="DailyStudentAttendanceReport" msprop:Generator_RowChangedName="DailyStudentAttendanceReportRowChanged" msprop:Generator_RowChangingName="DailyStudentAttendanceReportRowChanging" msprop:Generator_TableClassName="DailyStudentAttendanceReportDataTable" msprop:Generator_RowClassName="DailyStudentAttendanceReportRow" msprop:Generator_TableVarName="tableDailyStudentAttendanceReport" msprop:Generator_UserTableName="DailyStudentAttendanceReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_UserColumnName="UserID" type="xs:int" />
+              <xs:element name="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_UserColumnName="FirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_UserColumnName="LastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_UserColumnName="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_UserColumnName="GroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AttendanceDate" msprop:Generator_ColumnPropNameInRow="AttendanceDate" msprop:Generator_ColumnPropNameInTable="AttendanceDateColumn" msprop:Generator_ColumnVarNameInTable="columnAttendanceDate" msprop:Generator_UserColumnName="AttendanceDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubjectID" msprop:Generator_ColumnPropNameInRow="SubjectID" msprop:Generator_ColumnPropNameInTable="SubjectIDColumn" msprop:Generator_ColumnVarNameInTable="columnSubjectID" msprop:Generator_UserColumnName="SubjectID" type="xs:int" minOccurs="0" />
+              <xs:element name="InstructorFirstName" msprop:Generator_ColumnPropNameInRow="InstructorFirstName" msprop:Generator_ColumnPropNameInTable="InstructorFirstNameColumn" msprop:Generator_ColumnVarNameInTable="columnInstructorFirstName" msprop:Generator_UserColumnName="InstructorFirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InstructorLastName" msprop:Generator_ColumnPropNameInRow="InstructorLastName" msprop:Generator_ColumnPropNameInTable="InstructorLastNameColumn" msprop:Generator_ColumnVarNameInTable="columnInstructorLastName" msprop:Generator_UserColumnName="InstructorLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
